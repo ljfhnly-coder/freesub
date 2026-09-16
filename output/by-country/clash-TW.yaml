@@ -18,57 +18,34 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
+  server: tw4.miyazono-kaori.com
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  type: vless
+  uuid: f3c10b66-6a02-499f-9ed5-e518be4dde61
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g
+    short-id: e6d59aff03e5b0
+  servername: dlcdnets.asus.com
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 60.248.219.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
-  tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: 160.187.100.109
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
-  server: 103.137.22.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /register?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,8 +55,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,7 +64,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
 rules:
 - MATCH,PROXIES
