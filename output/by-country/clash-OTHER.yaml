@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.32.252
+  server: 188.114.98.0
   port: 443
   udp: true
-  type: vless
-  uuid: 6dd13cd4-e378-4742-bef1-d8ac54083626
-  tls: true
-  servername: eb9a7750.69lover.site
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /api/v2/4ecb1e0e26887759/stream
-    headers:
-      Host: eb9a7750.69lover.site
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
